@@ -1,0 +1,144 @@
+body{
+    background-color: white;
+    color:black ;
+}
+.navbar{
+    background-color: white;
+    padding: 25px 0;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nave{
+    list-style: none;
+    display: flex;
+    gap: 55px;
+}
+.nave a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    transition: color 0.3s ease;
+
+}
+.nave a:hover,
+.nave a.active{
+    color: blue;
+}
+.nave a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5px;
+    background-color: #0044cc;
+    border-radius: 2px;
+}
+.sec{
+    background-color: #b8d3f8;
+    padding: 50px 20px 65px;
+    text-align: center;
+}
+.sect{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.sec img{
+    width: 400px;
+      max-width: 100%;
+  
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.05));
+
+ 
+}
+    
+.sec h1{
+    font-size: 48px;
+    font-weight: 800;
+    color: #0b132b;
+    margin-bottom: 14px;
+    
+}
+.sec p{
+    font-size: 20px;
+    color: #3b475e;
+    
+    margin-bottom: 30px;
+    font-weight: 500;
+
+}
+.cat{
+    display: inline-block;
+    background-color: #0044cc;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 48px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+.cat:hover{
+    background-color: #003399;
+
+}
+.categories{
+    padding: 55px 20px 80px;
+    text-align: center;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.categories h2{
+    font-size: 34px;
+    font-weight: 800;
+    color: #0b132b;
+    margin-bottom: 35px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    
+    gap: 28px;
+}
+.contt{
+    border: 1.5px solid #e1e8f5;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.contt:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(11, 19, 43, 0.08);
+}
+.conttop{
+    background-color: #f4f7fc;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.conttop img{
+    max-height: 145px;
+    max-width: 85%;
+    object-fit: contain;
+     mix-blend-mode: multiply;
+    
+}
+.contbottom{
+    background-color: #e4ecf9;
+    padding: 18px
+}
+.contbottom h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b132b;
+}
